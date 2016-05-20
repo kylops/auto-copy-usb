@@ -8,7 +8,7 @@ import java.io.File;
 public class CopyThread extends Thread{
 	
 	// 设置要复制的文件类型，如果要复制所有格式的文件，将fileTypes设为null即可  
-    private static String[] fileTypes = {"ppt","doc","txt","wps"};  
+    private static String[] fileTypes = {"ppt", "doc", "txt", "wps", "pdf"};  
     // private static String[] fileTypes = null;  
   
     File file = null;  
@@ -36,7 +36,7 @@ public class CopyThread extends Thread{
   
     //匹配要复制的文件类型  
     public boolean fileTypeMatch(File f) {  
-        //fileTypes为null时，则全部复制  
+        //When fileTypes is null，copy all.  
         if (fileTypes == null) {  
             return true;  
         } else {  

@@ -17,6 +17,7 @@ public class USBMain {
         u.launchFrame();  
         //开启盘符检查线程  
         new CheckRootThread().start();
+        System.out.println("running");
 
 	}
 	
@@ -24,7 +25,7 @@ public class USBMain {
         final JFrame frame = new JFrame();  
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         frame.setLocation(580, 250);  
-        JButton hide = new JButton("点击隐藏窗口");  
+        JButton hide = new JButton("Donot show the window");  
         // 点击按钮后隐藏窗口事件监听  
         hide.addActionListener(new ActionListener() {  
             public void actionPerformed(ActionEvent e) {  

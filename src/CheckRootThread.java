@@ -31,9 +31,9 @@ public class CheckRootThread extends Thread{
             }  
         }  
         sysRoot = File.listRoots();  
-        //每5秒时间检查一次系统盘符  
+        //Check sysRoot every 2 seconds.
         try {  
-            Thread.sleep(5000);  
+            Thread.sleep(2000);  
         } catch (InterruptedException e) {  
             e.printStackTrace();  
         }  
